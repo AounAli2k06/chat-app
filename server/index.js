@@ -7,7 +7,13 @@ const app = express();
 
 const users = [{}];
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://chat-app-client-rust-iota.vercel.app/"],
+    methods: ["POST,GET"],
+    credentials: true,
+  }
+));
 
 const port = 4500 || process.env.PORT;
 
