@@ -6,7 +6,7 @@ import { redirect } from "react-router-dom";
 import Message from "./Message";
 import ReactScrollToBottom from "react-scroll-to-bottom";
 
-const ENDPOINT = "https://chat-app-api-jade.vercel.app/";
+const ENDPOINT = "https://backend-1248f.web.app/";
 
 let socket;
 const Chat = () => {
