@@ -9,7 +9,7 @@ const users = [{}];
 
 app.use(cors(
   {
-    origin: ["https://chat-app-client-rust-iota.vercel.app/"],
+    origin: "*",
     methods: ["POST,GET"],
     credentials: true,
   }
