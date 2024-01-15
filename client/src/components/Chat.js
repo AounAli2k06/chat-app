@@ -7,6 +7,7 @@ import Message from "./Message";
 import ReactScrollToBottom from "react-scroll-to-bottom";
 
 const ENDPOINT = "https://chat-app-api-jade.vercel.app/";
+
 let socket;
 const Chat = () => {
   const [message, setMessage] = useState("");
