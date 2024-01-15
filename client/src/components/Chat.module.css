@@ -1,0 +1,95 @@
+.chat-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #eeeeee 50%, #222831 50%);
+}
+
+.chat-container {
+  min-width: 60%;
+  height: 75%;
+  max-width: auto;
+  background-color: white;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
+.header {
+  height: 15%;
+  background-color: #393e46;
+}
+
+.chatbox {
+  height: 70%;
+}
+
+.inputbox {
+  height: 15%;
+  display: flex;
+  /* background-color: aqua; */
+}
+
+.inputbox input {
+  width: 80%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 2px solid #ffd369;
+}
+
+.header h2 {
+  font-size: 2rem;
+  width: 20rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  color: #ffd369;
+}
+
+.inputbox button {
+  width: 20%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #393e46;
+  text-transform: uppercase;
+  color: #ffd369;
+  font-weight: 400;
+  transition: all 0.4s;
+}
+
+.inputbox:hover button {
+  background-color: #32353a;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .chat-container{
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
+  }
+  .inputbox button {
+    width: 30%;
+  }
+  .inputbox input{
+    width: 70%;
+  }
+
+  .header{
+    height: 10% !important;
+  }
+  .chatbox{
+    height: 80% !important;
+  }
+  .inputbox {
+    height: 10% !important;
+  }
+}
