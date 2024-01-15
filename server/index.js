@@ -7,13 +7,14 @@ const app = express();
 
 const users = [{}];
 
-app.use(cors(
-  {
-    origin: "*",
-    methods: ["POST,GET"],
-    credentials: true,
-  }
-));
+const corsOptions = {
+  origin: "*",
+  methods: ["POST", "GET"],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+
 
 const port = 4500 || process.env.PORT;
 
